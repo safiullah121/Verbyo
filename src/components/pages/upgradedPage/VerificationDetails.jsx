@@ -3,7 +3,8 @@ import CustomButton from "../../common/CustomButton";
 import MyContext from "../../../Context";
 
 const VerificationDetails = () => {
-  const { setverificationDetails } = useContext(MyContext);
+  const { setverificationDetails, setenabledPaymentSection } =
+    useContext(MyContext);
   return (
     <>
       <h1 className="Montserrat700 sm:text-[20px] xsm:text-[18px] font-[700] leading-normal text-[#262F61] text-center sm:mt-[42px] xsm:mt-[27px]">
@@ -37,6 +38,7 @@ const VerificationDetails = () => {
           background="bg-[#3490EC]"
           onClick={() => {
             setverificationDetails(false);
+            setenabledPaymentSection(false);
           }}
         />
       </div>

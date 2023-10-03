@@ -3,7 +3,7 @@ import CustomButton from "../../common/CustomButton";
 import MyContext from "../../../Context";
 
 const PremiumDetails = () => {
-  const { setpremiumDetails } = useContext(MyContext);
+  const { setpremiumDetails, setenabledPaymentSection } = useContext(MyContext);
   const permiumDetails = [
     {
       src: "/img/EnabledVerified.svg",
@@ -98,6 +98,7 @@ const PremiumDetails = () => {
         background="bg-[#3490EC]"
         onClick={() => {
           setpremiumDetails(false);
+          setenabledPaymentSection(false);
         }}
       />
     </div>
