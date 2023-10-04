@@ -40,8 +40,9 @@ input::-webkit-inner-spin-button {
   font-family: 'Montserrat600';
   src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
   font-weight: 600;
-    font-style: normal;
+    font-style: normal; 
 }
+/*  */
 .Montserrat400{
   font-family: Montserrat;
 }
